@@ -4,8 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/main.css" />
+
+    <!-- JS -->
     <script type="module" src="JS/app.js" defer></script>
+
+    <!-- linear icons -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <section class="board">
+
+        <header class="menu">
+          <div class="header-nav">
+            <div class="menu-nav-turn">
+              <p><span class="lnr lnr-pointer-right"></span>YOU</p>
+            </div>
+            <div class="menu-nav-point">IQ : <strong class="get-pooint">0</strong> </div>
+            <a href="#" class="menu-nav-home"><span class="lnr lnr-home"></span></a>
+          </div>
+        </header>
+
+        <div class="game">
+          <div class="box-wrapper">
+            <div class="box" data-id="0"></div>
+            <div class="box" data-id="1"></div>
+            <div class="box" data-id="1"></div>
+            <div class="box" data-id="3"></div>
+            <div class="box" data-id="4"></div>
+            <div class="box" data-id="5"></div>
+            <div class="box" data-id="6"></div>
+            <div class="box" data-id="7"></div>
+            <div class="box" data-id="8"></div>
+          </div>
+          <div class="stage-clear"></div>
+        </div>
+
+    
+
+      <div class="modal-layout">
+        <div class="modal-content">
+          <div class="modal-main">
+            <h1 class="modal-title">게임 종료!</h1>
+            <span class="modal-output-iq">
+              당신의 IQ : <strong>40</strong>
+            </span>
+            <p class="modal-text">집중력을 좀 더 높여볼까요?</p>
+          </div>
+          <button class="modal-close-button">닫기</button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
