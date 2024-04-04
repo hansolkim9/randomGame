@@ -1,0 +1,70 @@
+@import url(../CSS/common.css);
+
+body {
+  /* border: 2px solid yellow; */
+  overflow-x: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+  /* display: block; */
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  flex-flow: colume;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+  h1 {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  font-size: 90px;
+  border: 2px solid yellow
+}
+
+.intro__tilte {
+  font-size: 60px;
+  line-height: 1.16;;
+  color: #fff;
+  text-align: center;
+}
+
+
+.intro__button {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%, 8%);
+  width: 80px;
+  height: 80px;
+  background: url(img/down-arrow.png) center/cover;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  width: 100%;
+  height: auto;
+  letter-spacing: -0.04em;
+  background-color: #fff;
+}
+
+#game__wrapper {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 100px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  min-height: 320px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff
+}
