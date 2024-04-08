@@ -11,8 +11,6 @@
   width: 100vw;
   height: 100vh;
   background: #000;
-  border: 5px solid orange;
-  
 }
 .board {
   width: 90%;
@@ -145,9 +143,19 @@
   margin: 4px;
   cursor: pointer;
 }
-#click {
-  transition: 0.8s;
-  background: rgb(222, 165, 164);
+
+.game .box-wrapper .box.bgColorChange {
+  animation: ChangeEffect 400ms 2 alternate;
+}
+
+@keyframes ChangeEffect {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: #dea5a4;
+  }
 }
 
 /* modal style */
