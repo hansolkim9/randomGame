@@ -4,52 +4,17 @@
  사용자 선택 값 = 블록마다 id 부여, 일치여부(true, false) 판단
  클릭이벤트 발생할 때마다 사용자가 누른 블록 id 값 === pc 선택 값
  */
-// 실행 js
 
-let answerValue = 3;
-let randomArray = [];
-
-/* 박스 전체 태그 선택*/
-const box = document.querySelector(`.menu-nav-home`);
-
-function randomMath() {
-  randomArray = [];
-  for (let i = 0; i <= answerValue; i++) {
-    let random = Math.floor(Math.random() * 9);
-    randomArray.push(random);
-  }
-}
-
-randomMath();
-console.log(randomArray);
-//
-// box.addEventListener(`click`, () => {}
-box.addEventListener(`click`, () => {
-  const Allbox = [...document.querySelectorAll(`.box`)];
-  randomMath();
-  Allbox.forEach((box) => {
-    if (box.classList.contains(`bgColorChange`)) {
-      box.classList.remove(`bgColorChange`);
-    }
-  });
-
-  for (let i = 0; i < randomArray.length; i++) {
-    Allbox[randomArray[i]].classList.add(`bgColorChange`);
-  }
-  console.log(randomArray);
-});
-
-// const intervalId = setInterval(() => {}, 800); // 0.8초마다 실행
 
 // =============================전역 변수 정의 영역========================//
 
 const userSequence = []; // 사용자가 입력한 순서를 저장하는 배열
+
 // ==============================함수 정의 영역===========================//
 
 const $boxWrapper = document.querySelector(".box-wrapper");
 const $modalLayout = document.querySelector(".modal-layout");
 
-// 게임 종료 함수
 
 let score = 0;
 
@@ -67,6 +32,8 @@ function verifyAnswer(i) {
   }
 }
 
+// ==============================함수 실행 영역===========================//
+
 $boxWrapper.addEventListener("click", (e) => {
   if (!e.target.matches(".box-wrapper .box")) return;
 
@@ -80,13 +47,4 @@ $boxWrapper.addEventListener("click", (e) => {
   verifyAnswer();
 });
 
-/*
-// 게임 초기화 함수
-function initGame() {
-  container.innerHTML = ""; // 컨테이너 비우기
-  gameoverDiv.style.display = "none"; // 게임 오버 화면 숨기기
-  sequence = []; // 순서 배열 초기화
-  userSequence = []; // 사용자 입력 배열 초기화
-  score = 0; // 점수 초기화
-}
-*/
+
