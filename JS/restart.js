@@ -30,4 +30,12 @@ function restart() {
 
 $restartButton.addEventListener("click", () => restart());
 
-export { $restartButton, restart };
+function close() {
+  if ($modalLayout.classList.contains("show")) {
+    $modalLayout.classList.remove("show");
+  }
+}
+
+$closeButton.addEventListener("click", () => close());
+
+export { $restartButton, restart, close};
