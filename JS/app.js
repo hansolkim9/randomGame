@@ -14,6 +14,9 @@ import {
   userSequence,
 } from "./validate.js";
 // timer();
+import { $restartButton, restart} from "./restart.js";
+
+
 
 setTimeout(() => {
   execute();
