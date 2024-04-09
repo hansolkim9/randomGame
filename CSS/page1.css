@@ -1,5 +1,9 @@
 @import url(../CSS/common.css);
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   /* border: 2px solid yellow; */
   overflow-x: hidden;
@@ -42,8 +46,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   letter-spacing: -0.04em;
   background-color: #fff;
 }
@@ -61,4 +65,36 @@ body {
   border-radius: 5px;
   background-color: #fff
 }
+
+.game__wrapper {
+  /* border: 1px solid gray; */
+  height: 400px;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+.game__wrapper .game__title {
+  /* background-color: yellow; */
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.game__wrapper .game__desc {
+  /* background-color: pink; */
+
+}
+/* .game__image {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  block-size: cover;
+  transition: bakgrount-image 250ms;
+} */
+
 
