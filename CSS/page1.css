@@ -17,19 +17,12 @@ body {
   height: 100vh;
   background-color: #000;
 }
-  h1 {
+
+.intro__title {
   display: block;
   font-weight: bold;
   color: #fff;
   font-size: 90px;
-  border: 2px solid yellow
-}
-
-.intro__tilte {
-  font-size: 60px;
-  line-height: 1.16;;
-  color: #fff;
-  text-align: center;
 }
 
 
@@ -68,3 +61,4 @@ body {
   border-radius: 5px;
   background-color: #fff
 }
+
