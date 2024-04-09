@@ -19,7 +19,7 @@ const $modalLayout = document.querySelector(".modal-layout");
 function clickBox() {
   setTimeout(() => {
     executingValueObject.isExecuting = true;
-  }, 800);
+  }, 0);
   $boxWrapper.onclick = (e) => {
     console.log(`zz`, executingValueObject.isExecuting);
 
@@ -28,7 +28,6 @@ function clickBox() {
     const dataId = +e.target.dataset.id;
     userSequence.push(dataId);
     console.log(userSequence);
-
     verifyAnswer();
   };
 }
@@ -49,13 +48,12 @@ function verifyAnswer() {
     userSequence = [];
     answerValueObject.answerValue++;
     executingValueObject.isExecuting = false;
-    console.log(executingValueObject.isExecuting);
     execute();
     // execute 함수가 완료된 후에 verifyAnswer 함수를 호출하기 위해 setTimeout 사용
     setTimeout(() => {
-      clickBox();
-      executingValueObject.isExecuting = true;
-    }, 800 * randomArray.length);
+      // clickBox();
+      // executingValueObject.isExecuting = false;
+    }, 4500 * randomArray.length);
   }
 }
 

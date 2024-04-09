@@ -23,8 +23,12 @@ const execute = () => {
   const intervalId = setInterval(() => {
     if (index >= randomArray.length) {
       clearInterval(intervalId); // 배열의 끝에 도달하면 인터벌 정지 //끝나면 다시 ㄴㄴ로 바꿈
+
       // console.log(index);
-      clickBox();
+      setTimeout(() => {
+        clickBox();
+      }, 400);
+
       return;
     }
     if (Allbox[randomArray[index]].classList.contains("bgColorChange")) {
@@ -33,7 +37,7 @@ const execute = () => {
     setTimeout(() => {
       Allbox[randomArray[index]].classList.add(`bgColorChange`);
       index++; //
-    }, 0);
+    }, 500);
   }, 800); // 0.8초마다 실행
   // });
 };
