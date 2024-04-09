@@ -7,10 +7,15 @@ import {
   $modalLayout,
   userSequence,
 } from "./validate.js";
+const $selectOrder = document.querySelector(".menu-nav-turn > p");
 const executingValueObject = {
   isExecuting: false,
 };
 const execute = () => {
+  if (document.querySelector(".stage-layout").classList.contains("stageshow")) {
+    document.querySelector(".stage-layout").classList.remove("stageshow");
+  }
+  console.log($selectOrder);
   const Allbox = [...document.querySelectorAll(`.box`)];
   randomMath();
   console.log(randomArray);
@@ -37,7 +42,7 @@ const execute = () => {
     setTimeout(() => {
       Allbox[randomArray[index]].classList.add(`bgColorChange`);
       index++; //
-    }, 500);
+    }, 100);
   }, 800); // 0.8초마다 실행
   // });
 };
