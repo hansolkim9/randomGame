@@ -206,3 +206,52 @@
 .show {
   display: block;
 }
+
+/* ////////////// */
+.stage-layout {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 100;
+}
+.stage-content {
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  /* border: 3px solid #000; */
+  border-radius: 10px;
+
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+.stage-main {
+  margin-bottom: 20px;
+}
+.stage-title {
+  color: #f38181;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 700;
+}
+.stage-output-box {
+  font-size: 21px;
+  font-weight: bold;
+}
+.stage-text {
+  margin-top: 15px;
+}
+
+/* show class style */
+.stageshow {
+  display: block;
+}

@@ -9,7 +9,7 @@ import { execute, executingValueObject } from "./clickRandomCom.js";
  */
 
 // =============================전역 변수 정의 영역========================//
-
+let stageIndex = 1;
 let userSequence = []; // 사용자가 입력한 순서를 저장하는 배열
 // ==============================함수 정의 영역===========================//
 
@@ -48,12 +48,24 @@ function verifyAnswer() {
     userSequence = [];
     answerValueObject.answerValue++;
     executingValueObject.isExecuting = false;
-    execute();
+    stageIndex++;
+    document.querySelector(".stage-output-box > strong").innerHTML = stageIndex;
+    let timer = 3;
+    const timerRound = setInterval(() => {
+      timer--;
+      if (timer === 0) {
+        timer = 3;
+        clearInterval(timerRound);
+      }
+      document.querySelector(
+        ".stage-timer"
+      ).innerHTML = `${timer} 초 후 게임이 자동 시작됩니다.`;
+    }, 1000);
+    document.querySelector(".stage-layout").classList.add("stageshow");
     // execute 함수가 완료된 후에 verifyAnswer 함수를 호출하기 위해 setTimeout 사용
     setTimeout(() => {
-      // clickBox();
-      // executingValueObject.isExecuting = false;
-    }, 4500 * randomArray.length);
+      execute();
+    }, 3000);
   }
 }
 
