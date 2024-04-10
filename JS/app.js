@@ -14,10 +14,11 @@ import {
   userSequence,
 } from "./validate.js";
 // timer();
-import { $restartButton, restart} from "./restart.js";
+import { $restartButton, restart, close} from "./restart.js";
+import clickBoxBox from "./click.js";
 
 
-
+clickBoxBox();
 setTimeout(() => {
   execute();
 }, 3300);

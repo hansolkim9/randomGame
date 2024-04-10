@@ -1,4 +1,6 @@
 import answerValueObject from "./app.js";
+import clickBoxBox from "./click.js";
+// import clickBoxBox from "./click.js";
 import { execute, executingValueObject } from "./clickRandomCom.js";
 
 /*
@@ -21,9 +23,9 @@ function clickBox() {
     executingValueObject.isExecuting = true;
   }, 0);
   $boxWrapper.onclick = (e) => {
-    console.log(`zz`, executingValueObject.isExecuting);
 
     if (!e.target.matches(".box-wrapper .box")) return;
+    clickBoxBox();
     if (!executingValueObject.isExecuting) return;
     const dataId = +e.target.dataset.id;
     userSequence.push(dataId);
@@ -56,6 +58,8 @@ function verifyAnswer() {
     }, 4500 * randomArray.length);
   }
 }
+
+
 
 import { randomMath, randomArray } from "./randomValue.js";
 export { clickBox, verifyAnswer, $boxWrapper, $modalLayout, userSequence };
