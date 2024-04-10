@@ -243,6 +243,9 @@
   font-size: 21px;
   font-weight: 700;
 }
+.stage-timer {
+  font-weight: bold;
+}
 .stage-output-box {
   font-size: 21px;
   font-weight: bold;

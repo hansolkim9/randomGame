@@ -1,3 +1,4 @@
+import { timeObject, TIMER } from "./timerlength.js";
 import { randomMath, randomArray } from "./randomValue.js";
 import answerValue from "./app.js";
 import {
@@ -14,6 +15,9 @@ const executingValueObject = {
 // turn 변경을 위한 변수 지정
 const $turn = document.querySelector('.game-turn');
 const execute = () => {
+  document.getElementById(
+    "timerGame"
+  ).textContent = `제한 시간 : ${timeObject.sec}초`;
   if (document.querySelector(".stage-layout").classList.contains("stageshow")) {
     document.querySelector(".stage-layout").classList.remove("stageshow");
   }
@@ -36,6 +40,7 @@ const execute = () => {
   let index = 0; // 초기 인덱스 설정
   const intervalId = setInterval(() => {
     if (index >= randomArray.length) {
+      TIMER();
       clearInterval(intervalId); // 배열의 끝에 도달하면 인터벌 정지 //끝나면 다시 ㄴㄴ로 바꿈
 
       // console.log(index);

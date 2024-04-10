@@ -24,11 +24,12 @@
         <header class="menu">
           <div class="header-nav">
             <div class="menu-nav-turn">
-              <p><span class="lnr lnr-pointer-right"></span><span class="game-turn">PC</span></p>
+              <p>
+                <span class="lnr lnr-pointer-right"></span
+                ><span class="game-turn">PC</span>
+              </p>
             </div>
-            <div class="menu-nav-point">
-              Score : <strong class="get-point">0</strong>
-            </div>
+            <div class="menu-nav-point" id="timerGame">제한 시간</div>
             <a href="#" class="menu-nav-home"
               ><span class="lnr lnr-home"></span
             ></a>
@@ -58,7 +59,8 @@
             <div class="modal-main">
               <h1 class="modal-title">게임 종료!</h1>
               <span class="modal-output-iq">
-                최종 Score : <strong id="modal-score" class="get-point">0</strong>
+                최종 Score :
+                <strong id="modal-score" class="get-point">0</strong>
               </span>
               <p class="modal-text">집중력을 좀 더 높여볼까요?</p>
             </div>
@@ -72,7 +74,7 @@
               <span class="stage-output-box">
                 다음 출력될 박스의 개수 <strong>4</strong>
               </span>
-              <p class="stage-timer">3초 후 게임이 자동 시작됩니다.</p>
+              <p class="stage-timer">3 초 후 게임이 자동 시작됩니다.</p>
             </div>
           </div>
         </div>

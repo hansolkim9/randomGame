@@ -6,6 +6,7 @@ const answerValueObject = {
 // remove 시키기.
 import { execute, executingValueObject } from "./clickRandomCom.js";
 import { timer, count, counter } from "./countdown.js";
+import { timeObject, TIMER } from "./timerlength.js";
 import {
   clickBox,
   verifyAnswer,
@@ -14,7 +15,9 @@ import {
   userSequence,
 } from "./validate.js";
 // timer();
-
+document.getElementById(
+  "timerGame"
+).textContent = `제한 시간 : ${timeObject.sec}초`;
 setTimeout(() => {
   execute();
 }, 3300);
