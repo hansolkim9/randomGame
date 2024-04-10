@@ -61,7 +61,7 @@ function verifyAnswer() {
     $score.textContent = stageIndex * 10;
     $modalScore.textContent = $score.textContent; // 모달에도 스코어 설정
     stageIndex++;
-    let timer = 3;
+    let timer = 4;
     document.querySelector(".stage-output-box > strong").innerHTML =
       randomArray.length + 1;
     const timerRound = setInterval(() => {

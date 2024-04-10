@@ -113,14 +113,14 @@
 
 @keyframes gamestart {
   0% {
-    opacity: 1; /* 시작 시 완전히 불투명한 상태 */
+    opacity: 1; 
   }
-  90% {
-    opacity: 1; /* 시작 시 완전히 불투명한 상태 */
+  85% {
+    opacity: 1; 
   }
 
   100% {
-    opacity: 0; /* 5초 후 완전히 투명해지는 상태 */
+    opacity: 0;
   }
 }
 #start > span {
