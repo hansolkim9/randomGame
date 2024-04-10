@@ -223,28 +223,10 @@
   display: block;
 }
 
-/* click class style */
-/* @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-} */
 
-/* .click {
-  background-color: blue;
-  border: 2px solid blue;
-} */
 
 .click {
-  animation: ChangeEffect 400ms 2 alternate;
+ 
+  border: 10px solid #f38181;
 }
 
-@keyframes ChangeEffect {
-  from {
-    background-color: #fff;
-  }
-
-  to {
-    background-color: blue;
-  }
-}

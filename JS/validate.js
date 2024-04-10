@@ -25,8 +25,9 @@ function clickBox() {
   $boxWrapper.onclick = (e) => {
 
     if (!e.target.matches(".box-wrapper .box")) return;
-    clickBoxBox();
+
     if (!executingValueObject.isExecuting) return;
+    clickBoxBox();
     const dataId = +e.target.dataset.id;
     userSequence.push(dataId);
     console.log(userSequence);
