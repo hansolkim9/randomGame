@@ -23,3 +23,7 @@ setTimeout(() => {
 }, 3300);
 
 export default answerValueObject;
+
+document.querySelector('.modal-close-button').addEventListener('click', () => {
+  window.location.reload(); // 게임종료 후 모달 닫기 버튼 클릭 > 브라우저 새로고침
+});

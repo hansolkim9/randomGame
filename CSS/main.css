@@ -258,3 +258,17 @@
 .stageshow {
   display: block;
 }
+
+
+/* blink 애니메이션 및 적용 class 생성 */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.blinking-text {
+  animation: blink 0.3s 3;
+}
+/* hover 적용 */
+.game .box-wrapper .hoverbox:hover {
+  background-color: #dea5a4;
+}
