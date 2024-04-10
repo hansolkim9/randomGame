@@ -1,13 +1,13 @@
 @import url(../CSS/common.css);
 
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
   /* border: 2px solid yellow; */
   overflow-x: hidden;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   /* display: block; */
 }
 
@@ -28,7 +28,6 @@ body {
   color: #fff;
   font-size: 90px;
 }
-
 
 .intro__button {
   position: absolute;
@@ -59,11 +58,13 @@ body {
   font-size: 18px;
   transition: background-color 0.5s;
   border-radius: 5%;
-  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   transition: bottom 250ms ease-in, box-shadow 250ms ease-in;
+  cursor: pointer;
 }
 
-.game__wrapper:hover{
+.game__wrapper:hover {
   /* border: 0.05px solid gray; */
   transform: scale(1.04);
   transition: 1s;
@@ -91,5 +92,3 @@ body {
   block-size: cover;
   transition: bakgrount-image 250ms;
 } */
-
-

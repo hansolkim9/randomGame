@@ -78,7 +78,7 @@ function verifyAnswer() {
     // execute 함수가 완료된 후에 verifyAnswer 함수를 호출하기 위해 setTimeout 사용
     setTimeout(() => {
       execute();
-    }, 3000);
+    }, 4000);
   }
 }
 
