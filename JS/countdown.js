@@ -7,7 +7,7 @@ function timer() {
     clearInterval(counter);
 
     document.getElementById("start").className = "end";
-    document.getElementById("timer").innerHTML = "게임 시작!";
+    document.getElementById("timer").innerHTML = "GAME START!!!";
     setTimeout(() => {
       const remove = document.getElementById(`start`);
       remove.remove();
