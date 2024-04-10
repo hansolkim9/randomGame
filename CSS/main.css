@@ -265,3 +265,7 @@
 .blinking-text {
   animation: blink 0.3s 3;
 }
+/* hover 적용 */
+.game .box-wrapper .hoverbox:hover {
+  background-color: #dea5a4;
+}
