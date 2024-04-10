@@ -44,10 +44,16 @@ function verifyAnswer() {
     }
   }
 
+  // 스코어 조작을 위한 변수 생성
+  const $score = document.querySelector(".get-point");
+  const $modalScore = document.getElementById("modal-score");
   if (userSequence.length === randomArray.length) {
     userSequence = [];
     answerValueObject.answerValue++;
     executingValueObject.isExecuting = false;
+    // stageIndex++ 직전에 스코어 설정
+    $score.textContent = stageIndex * 10;
+    $modalScore.textContent = $score.textContent; // 모달에도 스코어 설정
     stageIndex++;
     document.querySelector(".stage-output-box > strong").innerHTML = stageIndex;
     let timer = 3;
