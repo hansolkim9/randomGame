@@ -61,7 +61,7 @@ function verifyAnswer() {
     $score.textContent = stageIndex * 10;
     $modalScore.textContent = $score.textContent; // 모달에도 스코어 설정
     stageIndex++;
-    let timer = 3;
+    let timer = 4;
     document.querySelector(".stage-output-box > strong").innerHTML =
       randomArray.length + 1;
     const timerRound = setInterval(() => {
@@ -78,7 +78,7 @@ function verifyAnswer() {
     // execute 함수가 완료된 후에 verifyAnswer 함수를 호출하기 위해 setTimeout 사용
     setTimeout(() => {
       execute();
-    }, 3000);
+    }, 4000);
   }
 }
 
