@@ -11,6 +11,7 @@
     <!-- JS -->
     <!-- <script type="module" src="JS/validate.js" defer></script> -->
     <script type="module" src="JS/app.js" defer></script>
+    <script type="module" src="JS/timerlength.js" defer></script>
     <!-- <script type="module" src="JS/countdown.js" defer></script> -->
     <!-- linear icons -->
     <link
@@ -26,9 +27,7 @@
             <div class="menu-nav-turn">
               <p><span class="lnr lnr-pointer-right"></span>YOU</p>
             </div>
-            <div class="menu-nav-point">
-              Score : <strong class="get-pooint">0</strong>
-            </div>
+            <div class="menu-nav-point" id="timerGame">제한 시간</div>
             <a href="#" class="menu-nav-home"
               ><span class="lnr lnr-home"></span
             ></a>
@@ -72,7 +71,7 @@
               <span class="stage-output-box">
                 다음 출력될 박스의 개수 <strong>4</strong>
               </span>
-              <p class="stage-timer">3초 후 게임이 자동 시작됩니다.</p>
+              <p class="stage-timer">3 초 후 게임이 자동 시작됩니다.</p>
             </div>
           </div>
         </div>
