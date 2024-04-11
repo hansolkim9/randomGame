@@ -27,6 +27,7 @@ function clickBox() {
     if (!e.target.matches(".box-wrapper .box")) return;
 
     if (!executingValueObject.isExecuting) return;
+
     clickBoxBox();
     const dataId = +e.target.dataset.id;
     userSequence.push(dataId);
@@ -37,7 +38,6 @@ function clickBox() {
 
 function verifyAnswer() {
   // 실행 종료 후 상태 변경
-
   // 사용자가 클릭한 박스가 정답이 아닌 경우
   for (let i = 0; i < userSequence.length; i++) {
     if (randomArray[i] !== userSequence[i]) {
@@ -85,8 +85,6 @@ function verifyAnswer() {
     }, 4000);
   }
 }
-
-
 
 import { randomMath, randomArray } from "./randomValue.js";
 export { clickBox, verifyAnswer, $boxWrapper, $modalLayout, userSequence };

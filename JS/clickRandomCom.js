@@ -13,7 +13,7 @@ const executingValueObject = {
   isExecuting: false,
 };
 // turn 변경을 위한 변수 지정
-const $turn = document.querySelector('.game-turn');
+const $turn = document.querySelector(".game-turn");
 const execute = () => {
   document.getElementById(
     "timerGame"
@@ -31,11 +31,12 @@ const execute = () => {
     }
   });
   // turn : PC로 변경, 애니메이션 제거, hover 효과 제거
-  $turn.textContent = 'PC';
-  $turn.classList.remove('blinking-text');
+  $turn.textContent = "PC";
+  $turn.classList.remove("blinking-text");
+  document.getElementById("timerGame").classList.add("blinking-text");
   Allbox.forEach((box) => {
-    box.classList.remove('hoverbox')
-  })
+    box.classList.remove("hoverbox");
+  });
 
   let index = 0; // 초기 인덱스 설정
   const intervalId = setInterval(() => {
@@ -45,11 +46,12 @@ const execute = () => {
 
       // console.log(index);
       // turn : YOU로 변경, blink 애니매이션(클래스로) 추가, hover 효과 추가
-      $turn.textContent = 'YOU';
-      $turn.classList.add('blinking-text');
+      $turn.textContent = "YOU";
+      document.getElementById("timerGame").classList.remove("blinking-text");
+      $turn.classList.add("blinking-text");
       Allbox.forEach((box) => {
-        box.classList.add('hoverbox')
-      })
+        box.classList.add("hoverbox");
+      });
       setTimeout(() => {
         clickBox();
       }, 400);

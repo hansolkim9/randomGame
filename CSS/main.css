@@ -181,14 +181,13 @@
   }
 } */
 
-
-
 /* modal style */
 .modal-layout {
   display: none;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   position: fixed;
   z-index: 100;
 }
@@ -230,11 +229,23 @@
 /* show class style */
 .show {
   display: block;
+  animation: gameover 6s ease-out forwards;
 }
 
+@keyframes gameover {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .click {
- 
   border: 10px solid #f38181;
 }
 
@@ -243,7 +254,8 @@
   display: none;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   position: fixed;
   z-index: 100;
 }
@@ -316,4 +328,91 @@ a {
   /* display: block; */
   position: relative;
   top: -2px;
+}
+/* ================================== */
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+body {
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description,
+.link {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+.btn.modal-close-button {
+  padding: 17px 76px;
+}
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 70px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* width: 100px;
+  height: 100px; */
+  margin-top: 10px;
+  display: flex;
+  margin: 10 0;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #444141;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
 }
