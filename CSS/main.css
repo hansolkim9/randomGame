@@ -167,6 +167,22 @@
   }
 }
 
+/* .click {
+  animation: ChangeEffect 400ms 2 alternate;
+}
+
+@keyframes ChangeEffect {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: blue;
+  }
+} */
+
+
+
 /* modal style */
 .modal-layout {
   display: none;
@@ -214,6 +230,12 @@
 /* show class style */
 .show {
   display: block;
+}
+
+
+.click {
+ 
+  border: 10px solid #f38181;
 }
 
 /* ////////////// */

@@ -14,6 +14,11 @@ import {
   $modalLayout,
   userSequence,
 } from "./validate.js";
+import { $restartButton, restart, close} from "./restart.js";
+import clickBoxBox from "./click.js";
+
+
+clickBoxBox();
 timer();
 document.getElementById(
   "timerGame"
