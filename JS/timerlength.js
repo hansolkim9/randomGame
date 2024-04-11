@@ -13,15 +13,15 @@ const timeObject = {
 
 let timerend;
 function TIMER() {
-  gameTimer.textContent = timeObject.min + ":" + timeObject.sec;
+  gameTimer.textContent = Math.floor(timeObject.sec) + `초`;
   timerend = setInterval(function () {
     if (timeObject.sec > 0) {
       timeObject.sec = timeObject.sec - 1;
-      gameTimer.textContent = Math.floor(timeObject.min) + ":" + timeObject.sec; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다.
+      gameTimer.textContent = Math.floor(timeObject.sec) + `초`; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다.
     } else if (timeObject.sec === 60) {
       timeObject.min = 1;
       timeObject.sec = 0;
-      gameTimer.textContent = Math.floor(timeObject.min) + ":" + timeObject.sec; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다.
+      gameTimer.textContent = Math.floor(timeObject.sec) + `초`; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다.
     }
     if (timeObject.sec === 0) {
       clearInterval(timerend);
