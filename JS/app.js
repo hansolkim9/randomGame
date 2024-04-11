@@ -6,6 +6,7 @@ const answerValueObject = {
 // remove 시키기.
 import { execute, executingValueObject } from "./clickRandomCom.js";
 import { timer, count, counter } from "./countdown.js";
+import { timeObject, TIMER } from "./timerlength.js";
 import {
   clickBox,
   verifyAnswer,
@@ -13,14 +14,21 @@ import {
   $modalLayout,
   userSequence,
 } from "./validate.js";
-// timer();
 import { $restartButton, restart, close} from "./restart.js";
 import clickBoxBox from "./click.js";
 
 
 clickBoxBox();
+timer();
+document.getElementById(
+  "timerGame"
+).textContent = `제한 시간 : ${timeObject.sec}초`;
 setTimeout(() => {
   execute();
-}, 3300);
+}, 5500);
 
 export default answerValueObject;
+
+document.querySelector(".modal-close-button").addEventListener("click", () => {
+  window.location.reload(); // 게임종료 후 모달 닫기 버튼 클릭 > 브라우저 새로고침
+});
