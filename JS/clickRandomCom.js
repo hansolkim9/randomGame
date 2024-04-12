@@ -21,10 +21,8 @@ const execute = () => {
   if (document.querySelector(".stage-layout").classList.contains("stageshow")) {
     document.querySelector(".stage-layout").classList.remove("stageshow");
   }
-  console.log($selectOrder);
   const Allbox = [...document.querySelectorAll(`.box`)];
   randomMath();
-  console.log(randomArray);
   Allbox.forEach((box) => {
     if (box.classList.contains(`bgColorChange`)) {
       box.classList.remove(`bgColorChange`);

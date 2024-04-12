@@ -31,7 +31,7 @@ function clickBox() {
     clickBoxBox();
     const dataId = +e.target.dataset.id;
     userSequence.push(dataId);
-    console.log(userSequence);
+    // console.log(userSequence);
     verifyAnswer();
   };
 }
@@ -54,7 +54,6 @@ function verifyAnswer() {
   if (userSequence.length === randomArray.length) {
     userSequence = [];
     clearInterval(timerend);
-    console.log(timeObject);
     timeObject.sec = 0;
     setTimeout(() => {
       timeObject.sec = +3 * randomArray.length;

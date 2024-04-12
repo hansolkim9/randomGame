@@ -17,7 +17,6 @@ const $restartButton = document.querySelector(".modal-restart-button");
 const $closeButton = document.querySelector(".modal-close-button");
 const $modalLayout = document.querySelector(".modal-layout");
 
-console.log($restartButton);
 
 function restart() {
   document
