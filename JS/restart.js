@@ -34,7 +34,8 @@ function close() {
     $modalLayout.classList.remove("show");
     executingValueObject.isExecuting = false;
     document.getElementById("timerGame").classList.add("blinking-text");
-    document.getElementById(`timerGame`).textContent = `게임을 재실행해주세요.`;
+    document.getElementById(`timerGame`).style.fontSize = `16px`;
+    document.getElementById(`timerGame`).textContent = `게임 재시작 버튼을 눌러 재시작 해주세요`;
     const $selector = document.querySelector(".lnr-chevron-right");
     $selector.classList.remove(`lnr-chevron-right`);
     $selector.classList.add(`lnr-sync`);
