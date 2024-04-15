@@ -13,9 +13,9 @@
 ### 목차
 
 1. [프로젝트 소개](#프로젝트-소개)
-2. [팀원 소개](#👋-팀원)
-3. [기술 스택](#🔨-기술-스택)
-4. [주요 기능 및 로직 소개](#🎯-주요-기능-및-로직-소개)
+2. [팀원 소개](#팀원-소개)
+3. [환경](#환경)
+4. [개발](#개발)
 5. [개발 이력](#📜-개발-이력)
 6. [버전 정보](#💡-버전-정보)
 7. [DataBase](#⚙-DataBase)
@@ -36,23 +36,60 @@
   - 게임 종료 후 닫기 버튼 클릭시 재시작
   - 깃헙 관리
 - 김한솔
-  - https://github.com/Hazel0c0
+  - https://github.com/hansolkim9
   - 게임 실행 페이지 HTML5, css로 전체적인 구조 구현
   - 게임 순서 바뀔 시 PC,User turn 구현
   - 게임 종료 시 스코어 기능
 - 김은지
-  - https://github.com/sssonggg
+  - https://github.com/eeungji
   - 게임 선택 페이지 html5,css로 구조 구현
   - 게임 시작 전 카운트다운 기능
   - ppt 제작
-- 수빈
-  - https://github.com/sssonggg
+- 김수빈
+  - https://github.com/SoobihnKim
   - 사용자와 컴퓨터 클릭값 비교 후 정답 오답 비교
   - 사용자가 클릭박스에 효과
   - 게임 종료 시 재시작 버튼
 
-<!-- # 기억력 게임
+### 환경
 
+<div>
+<img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+</div>
+
+### 개발
+
+<div>
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+</div>
+
+### 메인 페이지
+
+![메인화면.png](./CSS/img/readme1.png)
+
+![메인화면스크롤내림.png](./CSS/img/raedmescrolldown.png)
+
+![게임카운트다운.png](./CSS/img/readmestart.png)
+
+- 게임 시작 전 5초의 카운트 다운
+  ![게임시작.png](./CSS/img/readmepcturn.png)
+- 카운트 다운 종료 후 pc 차례일 때 순서대로 박스를 출력해서 보여줌
+  ![게임시작.png](./CSS/img/readmeuserturn.png)
+- pc 차례 종료 후 유저 차례로 변경 시 기억해둔 박스를 순서대로 클릭
+  ![다음단계.png](./CSS/img/readmenextstage.png)
+- 정답 클릭 시 자동으로 다음 단계로 넘어감
+  ![탈락단계.png](./CSS/img/readmerestart.png)
+- 오답 클릭 시 게임 종료 후 재시작 닫기 버튼 클릭 가능
+- 재시작 버튼 클릭 시 게임 재시작
+  ![닫기클릭.png](./CSS/img/readmeclosebutton.png)
+  - 오답 클릭 시 나오는 창에서 닫기 버튼 클릭시 재시작 버튼 생성
+
+<!-- # 기억력 게임
+<!--
 3조 : [김수빈,진상훈,김은지,김한솔]
 
 ## 게임 규칙 📌
@@ -71,4 +108,4 @@
 
 ---
 
-> 1.  3 \* 3 사이즈로 시작된다. -->
+> 1.  3 \* 3 사이즈로 시작된다. --> -->
