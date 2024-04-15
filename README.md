@@ -91,7 +91,7 @@
 
 - ✅ 정답 클릭 시 자동으로 다음 단계로 넘어감
 
-  ![탈락단계.png](./CSS/img/readmerestart.png)
+  ![탈락단계.png](./CSS/img/readmerestart1.png)
 
 - ✅ 오답 클릭 시 게임 종료 후 재시작 닫기 버튼 클릭 가능
 - ✅ 재시작 버튼 클릭 시 게임 재시작
