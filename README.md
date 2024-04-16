@@ -1,7 +1,5 @@
 # 기억력 게임
 
-## 배포 주소 : [hun2zz.github.io](https://hun2zz.github.io)
-
 ## 프로젝트 정보
 
 ### 단체 : 중앙정보처리학원 데이터융합 자바(JAVA) 응용 SW개발자 취업과정 2조
